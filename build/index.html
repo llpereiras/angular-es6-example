@@ -4,8 +4,10 @@
 	<meta charset="UTF-8">
 	<title>My App</title>
 </head>
-<body>
-	<example-directive></example-directive>
+<body ng-app="app">
+    <h1>Ai AI </h1>
+    <cliente-directive ng-controller="ClienteController" ng-init='listarClientes()' ></cliente-directive>
+    <script src="../node_modules/angular/angular.min.js"></script>
 	<script src="bundle.js"></script>
 </body>
 </html>

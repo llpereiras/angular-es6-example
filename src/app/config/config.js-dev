@@ -1,0 +1,6 @@
+export default class Configuracao {
+
+  url_legado = 'http://dev.old.gazetapress.com/';
+  api_clientes = 'http://localhost:3005/';
+
+}

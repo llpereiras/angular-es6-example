@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+   <tr>
+     <th>Código</th>
+     <th>Data / Hora Cadastro</th>
+     <th>Tipo de Cliente</th>
+     <th>Nome(Razão Social) / Nome Fantasia</th>
+     <th>Interesses</th>
+     <th colspan="5" style="text-align:center">Opções</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr ng-repeat="cliente in ctrl.clientes">
+     <td>{{cliente.id}}</td>
+     <td>{{cliente.data_cadastro}}</td>
+     <td>pessoa {{cliente.tipo_cliente_id}}</td>
+     <td>{{cliente.razao_social}}</td>
+     <td>{{cliente.tipo_interesse_id}}</td>
+     <td><a href="{{ctrl.config.url_legado()}}admin/?administracao/cliente/formulario:editar::1654">editar</a></td>
+     <td><a href="{{ctrl.config.url_legado()}}admin/?administracao/cliente/acordo_comercial:::1654"><img src="dist/assets/imagens/clientes/acordo.gif" border="0" alt="acordo" title="Acordo Comercial"></a></td>
+     <td><a href="{{ctrl.config.url_legado()}}admin/?administracao/cliente/usuarios_lista:1654::"><img src="dist/assets/imagens/clientes/usuarios.gif" border="0" alt="usuarios" title="Usuários"></a></td>
+     <td><a href="{{ctrl.config.url_legado()}}admin/?administracao/cliente/restricoes_lista:1654::"><img src="dist/assets/imagens/clientes/restricoes.gif" border="0" alt="restricoes" title="Restrições"></a></td>
+     <td><a href="javascript:ajaxDelete('administracao/cliente',1654,'cliente');">excluir</a></td>
+   </tr>
+  </tbody>
+</table>

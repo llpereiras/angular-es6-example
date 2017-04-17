@@ -1,8 +1,6 @@
-import angular from 'angular';
-import example from './example-component/example.js'
+(function() {
+    'use strict';
 
-angular.module('app', [
-	'example'
-]);
+    angular.module('app', []);
 
-angular.bootstrap(document, ['app']);
+})();
